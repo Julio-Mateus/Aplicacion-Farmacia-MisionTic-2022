@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView)
+from authApp import views
+from authApp.models.productos import Producto
+from authApp.views.userCreateView import UserCreateView
+from authApp.views.userDetailView import UserDetailView
+from authApp.views.productoDetailView import ProductoDetailView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('createUser/', UserCreateView.as_view()),
+    path('producto/<int:pk>/', ProductoDetailView.as_view()),
 ]

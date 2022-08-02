@@ -70,7 +70,7 @@ SIMPLE_JWT = {
     'UPDATE_LAST_LOGIN': False,
 
     'ALGORITHM': 'HS256',
-    'USER_ID_FIELD': 'id',
+    'USER_ID_FIELD': 'identificacion',
     'USER_ID_CLAIM': 'user_id',
 }
 
@@ -101,10 +101,10 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dftpg3apnd3669',
-        'HOST': 'ec2-100-26-39-41.compute-1.amazonaws.com',
-        'USER': 'udfcdejarhxjwy',
-        'PASSWORD': '626f71d46db1967deeac38df4a2d6cc201070b641ef538af79fbee563d34e115',
+        'NAME': 'd3vmh95mt91cua',
+        'HOST': 'ec2-34-235-31-124.compute-1.amazonaws.com',
+        'USER': 'ozwpxwyzerfsrq',
+        'PASSWORD': '23a016c1b0fd311691f44963c22a72094726c897cc769273012486d25c2776b7',
         'PORT': '5432'
     }
 }
